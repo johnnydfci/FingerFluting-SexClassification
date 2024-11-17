@@ -24,7 +24,7 @@ Scripts for dataset preparation and organization are provided. The dataset was d
 ---
 
 ### Step 2: Model Training
-Deep learning models were trained on the prepared datasets to classify sex. The following architectures were employed:
+Deep learning models were trained on the prepared datasets to classify sex based on the fine-tuning pipeline described in this [Kaggle notebook](https://www.kaggle.com/code/frozenwolf/coronahack-finetuning-resnet18-pytorch). The following architectures were employed:
 
 #### 2.1 ResNet-18
 Reference:[ PyTorch ResNet-18](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html)
