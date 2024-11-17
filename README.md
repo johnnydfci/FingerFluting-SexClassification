@@ -1,5 +1,7 @@
 # Sex Classification Using Finger Fluting Images: Virtual and Tactile Image Modalities
 
 This technical report investigates the feasibility of deep learning-based sex classification using finger fluting images, exploring two modalities: virtual images and tactile images. The dataset includes 92 participants for virtual images (63 female, 29 male) and 79 participants for tactile images (56 female, 23 male). To maximise data utility, the dataset was split into training and tuning sets in an 8:2 ratio at the individual level, with no independent test set used.
+
+
 ResNet-18 and EfficientNet-V2-S were chosen as classification models due to their strong classification performance and relatively small parameter counts, suitable for the dataset’s limited size. However, results indicate significant overfitting during training, hindering reliable classification performance. This outcome suggests the need for additional data to improve generalizability or raises the possibility that sex classification may be inherently unfeasible with finger fluting images.
 
