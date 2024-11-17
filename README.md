@@ -1,7 +1,35 @@
-# Sex Classification Using Finger Fluting Images: Virtual and Tactile Image Modalities
+# Sex Classification Using Finger Fluting Images  
+### *Virtual and Tactile Image Modalities*
 
-This technical report investigates the feasibility of deep learning-based sex classification using finger fluting images, exploring two modalities: virtual images and tactile images. The dataset includes 92 participants for virtual images (63 female, 29 male) and 79 participants for tactile images (56 female, 23 male). To maximise data utility, the dataset was split into training and tuning sets in an 8:2 ratio at the individual level, with no independent test set used.
+This repository contains the implementation for a technical study on the feasibility of deep learning-based sex classification using finger fluting images, focusing on **virtual** and **tactile** image modalities.
 
 
-ResNet-18 and EfficientNet-V2-S were chosen as classification models due to their strong classification performance and relatively small parameter counts, suitable for the dataset’s limited size. However, results indicate significant overfitting during training, hindering reliable classification performance. This outcome suggests the need for additional data to improve generalizability or raises the possibility that sex classification may be inherently unfeasible with finger fluting images.
+## Dataset
+
+The dataset used in this study includes:
+- **Virtual Images**: 92 participants (63 female, 29 male)
+- **Tactile Images**: 79 participants (56 female, 23 male)
+
+The dataset was split into **training** and **tuning sets** in an 8:2 ratio at the individual level to maximize utility. Due to the limited dataset size, no independent test set was utilized.
+
+---
+
+## Implementation
+
+### Step 1: Data Preparation
+Scripts for dataset preparation and organization are provided. The dataset was divided into training and tuning subsets as follows:
+- **Virtual Images**: Raw images
+- **Tactile Images (cropped)**: Tactile images were cropped using the **SAM2 model**, focusing on central regions of interest. Custom cropping configurations were implemented to improve segmentation quality.
+
+---
+
+### Step 2: Model Training
+Deep learning models were trained on the prepared datasets to classify sex. The following architectures were employed:
+
+#### 2.1 ResNet-18
+Reference:[ PyTorch ResNet-18](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html)
+
+#### 2.2 EfficientNet-V2-S
+
+Reference:[PyTorch EfficientNet-V2-S](https://pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_v2_s.html)
 
