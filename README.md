@@ -19,7 +19,7 @@ The dataset was split into **training** and **tuning sets** in an 8:2 ratio at t
 ### Step 1: Data Preparation
 Scripts for dataset preparation and organization are provided. The dataset was divided into training and tuning subsets as follows:
 - **Virtual Images**: Raw images
-- **Tactile Images (cropped)**: Tactile images were cropped using the [**SAM2 model**](https://colab.research.google.com/github/facebookresearch/sam2/blob/main/notebooks/image_predictor_example.ipynb.  ).
+- **Tactile Images (cropped)**: Tactile images were cropped using the [SAM2_to_crop_image.md](sam2_notebooks/README.md)
   - Steps for cropping tactile images:
   
   1. Provide either a single central point or five central points as the input prompt.
