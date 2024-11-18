@@ -19,15 +19,7 @@ The dataset was split into **training** and **tuning sets** in an 8:2 ratio at t
 ### Step 1: Data Preparation
 Scripts for dataset preparation and organization are provided. The dataset was divided into training and tuning subsets as follows:
 - **Virtual Images**: Raw images
-- **Tactile Images (cropped)**: Tactile images were cropped using the [SAM2_to_crop_image.md](sam2_notebooks/README.md)
-  - Steps for cropping tactile images:
-  
-  1. Provide either a single central point or five central points as the input prompt.
-  2. Select the mask with the highest probability and process it as follows: Dilate the mask by 5 pixels; Perform connected component analysis to isolate the largest component.
-  3. Identify the bounding box of the largest connected component.
-  4. Crop the image based on the bounding box.
-
-
+- **Tactile Images (cropped)**: Tactile images were cropped using the SAM2 model. [Implementation_steps.md](sam2_notebooks/README.md)
 ---
 
 ### Step 2: Model Training
