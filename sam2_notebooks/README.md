@@ -5,14 +5,17 @@ The SAM2 model is adapted from the original repository: [facebookresearch/sam2](
 
 ---
 
-## Requirements
+### Environment setup
 
-- **Python**: >=3.10  
-- **Torch**: >=2.3.1  
-- **Torchvision**: >=0.18.1  
+```conda create -n sam python=3.10.0``` # create a conda environment with python3.10.0; ```conda remove -n sam --all ```if you want to delete this conda environment. 'lipa' stands for liver parenchymal
 
----
+```conda activate sam```  # activate the conda environment
 
+```conda install nb_conda_kernels```  # Install jupyter notebook
+
+ ```conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=11.8 -c pytorch -c nvidia```
+ 
+ 
 ## Implementation
 
 ### Step 1: Clone and Install SAM2
