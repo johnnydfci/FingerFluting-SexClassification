@@ -27,9 +27,13 @@ Deep learning models were trained on the prepared datasets to classify sex based
 
 #### 2.1 ResNet-18  
 [Implementation on virtual images (jupyter notebook)](Github_finetuning_resnet18_virtual_img.ipynb)
+
+
 [Implementation on tacttile images (jupyter notebook)](Github_finetuning_resnet18_tactile.ipynb)
 
 #### 2.2 EfficientNet-V2-S 
 
 [Implementation on virtual images (jupyter notebook)](Github_finetuning_efficient_net_v2s_virtual_img.ipynb)
+
+
 [Implementation on tacttile images (jupyter notebook)](Github_finetuning_efficient_net_v2s_tactile.ipynb)
