@@ -25,10 +25,11 @@ Scripts for dataset preparation and organization are provided. The dataset was d
 ### Step 2: Model Training
 Deep learning models were trained on the prepared datasets to classify sex based on the fine-tuning pipeline described in this [Kaggle notebook](https://www.kaggle.com/code/frozenwolf/coronahack-finetuning-resnet18-pytorch). The following architectures were employed:
 
-#### 2.1 ResNet-18   [implementation in jupyter notebook](Github_finetuning_resnet18_lr0.0001_virtual_img.ipynb)
-Reference:[ PyTorch ResNet-18](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html)
+#### 2.1 ResNet-18  
+[Implementation on virtual images (jupyter notebook)](Github_finetuning_resnet18_virtual_img.ipynb)
+[Implementation on tacttile images (jupyter notebook)](Github_finetuning_resnet18_tactile.ipynb)
 
-#### 2.2 EfficientNet-V2-S [implementation in jupyter notebook](Github_finetuning_efficientnetv2s_lr0.0001_virtual_img.ipynb)
+#### 2.2 EfficientNet-V2-S 
 
-Reference:[PyTorch EfficientNet-V2-S](https://pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_v2_s.html)
-
+[Implementation on virtual images (jupyter notebook)](Github_finetuning_efficient_net_v2s_virtual_img.ipynb)
+[Implementation on tacttile images (jupyter notebook)](Github_finetuning_efficient_net_v2s_tactile.ipynb)
