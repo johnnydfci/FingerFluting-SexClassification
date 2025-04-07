@@ -18,7 +18,7 @@ The dataset is publicly available at:
 
 ### Data Ethics and Consent
 
-This dataset was collected under approved ethics protocol (Griffith University Ref. No. 2023/667). All participants provided informed consent for their data to be used in this and future related research.The dataset is shared exclusively for academic and non-commercial use, in compliance with Griffith University's [Privacy Plan](https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan).
+This dataset was collected under approved ethics protocol (Griffith University Ref. No. 2023/667). All participants provided informed consent for their data to be used in this and future related research. No personal identifiers (such as names, contact information, or birthdates) are included. The dataset is shared exclusively for academic and non-commercial use, in compliance with Griffith University's [Privacy Plan](https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan).
 
 ---
 
