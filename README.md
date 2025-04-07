@@ -1,39 +1,53 @@
 # Sex Classification Using Finger Fluting Images  
 ### *Virtual and Tactile Image Modalities*
 
-This repository contains the implementation for a technical study on the feasibility of deep learning-based sex classification using finger fluting images, focusing on **virtual** and **tactile** image modalities.
+This repository presents the implementation of a technical study exploring the feasibility of deep learning-based sex classification using finger fluting images. The study focuses on two distinct modalities: **virtual** and **tactile** images.
 
+---
 
 ## Dataset
 
-The dataset used in this study includes:
-- **Virtual Images**: 92 participants (63 female, 29 male)
+The dataset consists of finger fluting images collected from two sources:
+
+- **Virtual Images**: 92 participants (63 female, 29 male)  
 - **Tactile Images**: 79 participants (56 female, 23 male)
 
-The dataset was split into **training** and **tuning sets** in an 8:2 ratio at the individual level to maximize utility. Due to the limited dataset size, no independent test set was utilized.
+To maximize the utility of available data, the dataset was split into **training** and **test** sets with an 80:20 ratio at the participant level.  
+The dataset is publicly available at:  
+[Google Drive - Finger Fluting Dataset](https://drive.google.com/drive/folders/1_CBRTB26yzQKEwfBJ-0cWzvpmC_H0SZi?usp=drive_link)
 
 ---
 
 ## Implementation
 
 ### Step 1: Data Preparation
-Scripts for dataset preparation and organization are provided. The dataset was divided into training and tuning subsets as follows:
-- **Virtual Images**: Raw images
-- **Tactile Images (cropped)**: Tactile images were cropped using the SAM2 model. [Implementation_steps.md](sam2_notebooks/README.md)
+
+Scripts for dataset preparation and organization are included in this repository. The data was structured into training and test sets as follows:
+
+- **Virtual Images**: Used in raw form.  
+- **Tactile Images (Cropped)**: Preprocessed and cropped using the SAM2 model to ensure consistency.  
+  For detailed preprocessing steps, refer to [Implementation_steps.md](sam2_notebooks/README.md).
+
 ---
 
-### Step 2: Model Training
-Deep learning models were trained on the prepared datasets to classify sex based on the fine-tuning pipeline described in this [Kaggle notebook](https://www.kaggle.com/code/frozenwolf/coronahack-finetuning-resnet18-pytorch). The following architectures were employed:
+### Step 2: Model Training and Accuracy Evaluation
 
-#### 2.1 ResNet-18  
-[Implementation on virtual images (jupyter notebook)](Github_finetuning_resnet18_virtual_img.ipynb)
+Deep learning models were fine-tuned on the prepared datasets to perform binary sex classification. The training pipeline follows the approach described in this [Kaggle notebook](https://www.kaggle.com/code/frozenwolf/coronahack-finetuning-resnet18-pytorch).
 
+Two model architectures were explored:
 
-[Implementation on tacttile images (jupyter notebook)](Github_finetuning_resnet18_tactile.ipynb)
+#### 2.1 ResNet-18
 
-#### 2.2 EfficientNet-V2-S 
+- [Virtual Images (Jupyter Notebook)](Github_finetuning_resnet18_virtual_img.ipynb)  
+- [Tactile Images (Jupyter Notebook)](Github_finetuning_resnet18_tactile.ipynb)
 
-[Implementation on virtual images (jupyter notebook)](Github_finetuning_efficient_net_v2s_virtual_img.ipynb)
+#### 2.2 EfficientNet-V2-S
 
+- [Virtual Images (Jupyter Notebook)](Github_finetuning_efficient_net_v2s_virtual_img.ipynb)  
+- [Tactile Images (Jupyter Notebook)](Github_finetuning_efficient_net_v2s_tactile.ipynb)
 
-[Implementation on tacttile images (jupyter notebook)](Github_finetuning_efficient_net_v2s_tactile.ipynb)
+---
+
+## Contact
+
+For questions, suggestions, or collaboration inquiries, feel free to reach out.
