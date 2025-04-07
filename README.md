@@ -16,6 +16,12 @@ To maximize the utility of available data, the dataset was split into **training
 The dataset is publicly available at:  
 [Google Drive - Finger Fluting Dataset](https://drive.google.com/drive/folders/1_CBRTB26yzQKEwfBJ-0cWzvpmC_H0SZi?usp=drive_link)
 
+### Data Ethics and Consent
+
+This dataset was collected under approved ethics protocol (Griffith University Ref. No. 2023/667). All participants provided informed consent for their data to be used in this and future related research.
+
+A de-identified version of the data may be published openly, as explicitly outlined in the participant information sheet. No personal identifiers (such as names, contact information, or birthdates) are included. The dataset is shared exclusively for academic and non-commercial use, in compliance with Griffith University's [Privacy Plan](https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan).
+
 ---
 
 ## Implementation
